@@ -1,0 +1,44 @@
+<svg
+  width="512"
+  height="512"
+  viewBox="0 0 512 512"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient
+      id="dakIconGradient"
+      x1="90"
+      y1="70"
+      x2="420"
+      y2="440"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+  </defs>
+
+  <rect
+    width="512"
+    height="512"
+    rx="120"
+    fill="#050507"
+  />
+
+  <rect
+    x="36"
+    y="36"
+    width="440"
+    height="440"
+    rx="100"
+    fill="#0B0B10"
+    stroke="url(#dakIconGradient)"
+    stroke-width="12"
+  />
+
+  <path
+    d="M150 135H255C327 135 375 176 375 256C375 336 327 377 255 377H150V135ZM205 187V325H251C295 325 320 301 320 256C320 211 295 187 251 187H205Z"
+    fill="url(#dakIconGradient)"
+  />
+</svg>

@@ -1,0 +1,275 @@
+@import "tailwindcss";
+
+/* =========================================================
+   DAK CORPORATION — PREMIUM GLOBAL STYLES
+   ========================================================= */
+
+:root {
+  --background: #050507;
+  --foreground: #ffffff;
+  --muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+  scrollbar-color: #27272a #050507;
+  scrollbar-width: thin;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+
+  background:
+    radial-gradient(
+      circle at 50% -10%,
+      rgba(139, 92, 246, 0.09),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 100% 40%,
+      rgba(59, 130, 246, 0.05),
+      transparent 28%
+    ),
+    #050507;
+
+  color: var(--foreground);
+
+  font-family:
+    var(--font-dak),
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================================
+   BUTTONS / FORM ELEMENTS
+   ========================================================= */
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Keep white CTA text readable */
+button.bg-white,
+a.bg-white {
+  color: #050507 !important;
+}
+
+button.bg-white:hover,
+a.bg-white:hover {
+  color: #050507 !important;
+}
+
+/* =========================================================
+   IMAGES
+   ========================================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================================================
+   TEXT SELECTION
+   ========================================================= */
+
+::selection {
+  background: rgba(139, 92, 246, 0.4);
+  color: #ffffff;
+}
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050507;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* =========================================================
+   PREMIUM ANIMATIONS
+   ========================================================= */
+
+@keyframes dakFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dakFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dakGlowPulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+/* =========================================================
+   PAGE ENTRANCE
+   ========================================================= */
+
+main > section {
+  animation: dakFadeUp 0.8s ease both;
+}
+
+main > section:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+main > section:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+main > section:nth-child(3) {
+  animation-delay: 0.18s;
+}
+
+main > section:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+main > section:nth-child(5) {
+  animation-delay: 0.3s;
+}
+
+main > section:nth-child(6) {
+  animation-delay: 0.36s;
+}
+
+main > section:nth-child(7) {
+  animation-delay: 0.42s;
+}
+
+/* =========================================================
+   GLOW
+   ========================================================= */
+
+.dak-glow {
+  animation: dakGlowPulse 5s ease-in-out infinite;
+}
+
+/* =========================================================
+   PREMIUM HOVER
+   ========================================================= */
+
+.dak-hover-lift {
+  transition:
+    transform 300ms ease,
+    border-color 300ms ease,
+    background-color 300ms ease,
+    box-shadow 300ms ease;
+}
+
+.dak-hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   FOCUS
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(167, 139, 250, 0.8);
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  main > section {
+    animation-duration: 0.65s;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
