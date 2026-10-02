@@ -38,18 +38,19 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-[#050507] text-white">
 
       {/* =====================================================
-          GLOBAL BACKGROUND
+          BACKGROUND
       ====================================================== */}
 
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
 
-        <div className="absolute left-[10%] top-[-200px] h-[500px] w-[500px] rounded-full bg-violet-600/15 blur-[140px]" />
+        <div className="absolute left-[8%] top-[-220px] h-[550px] w-[550px] rounded-full bg-violet-600/15 blur-[150px]" />
 
-        <div className="absolute right-[-150px] top-[15%] h-[600px] w-[600px] rounded-full bg-indigo-600/10 blur-[160px]" />
+        <div className="absolute right-[-180px] top-[15%] h-[650px] w-[650px] rounded-full bg-indigo-600/10 blur-[170px]" />
 
-        <div className="absolute bottom-[-200px] left-1/2 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-fuchsia-600/[0.07] blur-[150px]" />
+        <div className="absolute bottom-[-200px] left-1/2 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-fuchsia-600/[0.07] blur-[160px]" />
 
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:linear-gradient(to_bottom,black_0%,transparent_80%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.018)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.018)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:linear-gradient(to_bottom,black_0%,transparent_85%)]" />
+
       </div>
 
       {/* =====================================================
@@ -62,21 +63,26 @@ export default function Home() {
 
           <div className="grid w-full items-center gap-16 lg:grid-cols-[0.95fr_1.05fr]">
 
-            {/* =================================================
-                HERO LEFT
-            ================================================= */}
+            {/* LEFT */}
 
             <div className="max-w-3xl">
 
               <div className="inline-flex items-center gap-3 rounded-full border border-violet-400/20 bg-violet-500/[0.06] px-4 py-2 text-xs font-medium text-violet-200 backdrop-blur-xl">
 
                 <span className="relative flex h-2 w-2">
+
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400 opacity-60" />
+
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-400" />
+
                 </span>
 
                 DAK Corporation
-                <span className="text-white/20">•</span>
+
+                <span className="text-white/20">
+                  •
+                </span>
+
                 Intelligent technology
 
               </div>
@@ -112,6 +118,7 @@ export default function Home() {
                   <span className="transition-transform duration-300 group-hover:translate-x-1">
                     →
                   </span>
+
                 </a>
 
                 <Link
@@ -125,23 +132,27 @@ export default function Home() {
 
               <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs text-gray-600">
 
-                <span>AI-powered products</span>
+                <span>
+                  AI-powered products
+                </span>
 
                 <span className="h-1 w-1 rounded-full bg-gray-700" />
 
-                <span>Business software</span>
+                <span>
+                  Business software
+                </span>
 
                 <span className="h-1 w-1 rounded-full bg-gray-700" />
 
-                <span>Built for scale</span>
+                <span>
+                  Built for scale
+                </span>
 
               </div>
 
             </div>
 
-            {/* =================================================
-                HERO RIGHT — PREMIUM BIZAI PREVIEW
-            ================================================= */}
+            {/* RIGHT */}
 
             <div className="relative mx-auto w-full max-w-2xl">
 
@@ -151,7 +162,7 @@ export default function Home() {
 
               <div className="absolute left-1/2 top-1/2 h-[390px] w-[390px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-indigo-400/[0.06]" />
 
-              {/* Floating label */}
+              {/* FLOATING CARD 1 */}
 
               <div className="absolute left-[2%] top-[15%] hidden rounded-2xl border border-white/10 bg-[#0a0a10]/80 px-4 py-3 shadow-xl backdrop-blur-xl sm:block">
 
@@ -165,6 +176,8 @@ export default function Home() {
 
               </div>
 
+              {/* FLOATING CARD 2 */}
+
               <div className="absolute right-[1%] top-[20%] hidden rounded-2xl border border-white/10 bg-[#0a0a10]/80 px-4 py-3 shadow-xl backdrop-blur-xl sm:block">
 
                 <p className="text-[10px] uppercase tracking-[0.18em] text-gray-600">
@@ -177,7 +190,7 @@ export default function Home() {
 
               </div>
 
-              {/* Product preview */}
+              {/* MAIN PRODUCT PREVIEW */}
 
               <div className="relative z-10 mx-auto max-w-[560px]">
 
@@ -185,7 +198,7 @@ export default function Home() {
 
                   <div className="rounded-[2rem] border border-white/5 bg-[#08080d]/95 p-4 backdrop-blur-2xl sm:p-6">
 
-                    {/* Window top */}
+                    {/* TOP */}
 
                     <div className="flex items-center justify-between border-b border-white/10 pb-5">
 
@@ -221,7 +234,7 @@ export default function Home() {
 
                     </div>
 
-                    {/* AI Insight */}
+                    {/* AI INSIGHT */}
 
                     <div className="mt-5 rounded-2xl border border-violet-400/10 bg-gradient-to-br from-violet-500/[0.10] via-violet-500/[0.04] to-indigo-500/[0.04] p-5">
 
@@ -244,7 +257,7 @@ export default function Home() {
 
                     </div>
 
-                    {/* Stats */}
+                    {/* STATS */}
 
                     <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
 
@@ -274,7 +287,7 @@ export default function Home() {
 
                     </div>
 
-                    {/* Business Activity */}
+                    {/* BUSINESS ACTIVITY */}
 
                     <div className="mt-4 rounded-2xl border border-white/10 bg-white/[0.025] p-5">
 
@@ -310,15 +323,19 @@ export default function Home() {
 
                       <div className="mt-3 flex items-center justify-between text-[10px] text-gray-600">
 
-                        <span>Automation</span>
+                        <span>
+                          Automation
+                        </span>
 
-                        <span>78%</span>
+                        <span>
+                          78%
+                        </span>
 
                       </div>
 
                     </div>
 
-                    {/* Bottom feature row */}
+                    {/* FEATURES */}
 
                     <div className="mt-4 grid grid-cols-3 gap-3">
 
@@ -343,7 +360,7 @@ export default function Home() {
 
                 </div>
 
-                {/* Caption */}
+                {/* CAPTION */}
 
                 <div className="mx-auto mt-5 flex w-fit items-center gap-3 rounded-full border border-white/10 bg-[#0a0a10]/90 px-5 py-2.5 text-xs text-gray-400 shadow-xl backdrop-blur-xl">
 
@@ -372,7 +389,7 @@ export default function Home() {
       </section>
 
       {/* =====================================================
-          ABOUT
+          ABOUT DAK
       ====================================================== */}
 
       <section
@@ -399,15 +416,19 @@ export default function Home() {
             <div className="max-w-3xl">
 
               <p className="text-xl leading-9 text-gray-300">
+
                 DAK Corporation is a technology company focused on
                 creating intelligent digital products for real-world
                 business problems.
+
               </p>
 
               <p className="mt-7 leading-8 text-gray-500">
+
                 We combine artificial intelligence, software engineering,
                 automation, and business data to create products that
                 simplify complex work and help businesses move forward.
+
               </p>
 
               <div className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -441,7 +462,7 @@ export default function Home() {
       </section>
 
       {/* =====================================================
-          FLAGSHIP PRODUCT
+          BIZAI FLAGSHIP PRODUCT
       ====================================================== */}
 
       <section
@@ -451,8 +472,6 @@ export default function Home() {
 
         <div className="mx-auto max-w-7xl px-6 py-28 lg:px-8">
 
-          {/* Header */}
-
           <div className="max-w-3xl">
 
             <div className="inline-flex items-center gap-2 rounded-full border border-violet-400/10 bg-violet-500/[0.05] px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-violet-300">
@@ -460,21 +479,26 @@ export default function Home() {
             </div>
 
             <h2 className="mt-6 text-4xl font-semibold tracking-tight sm:text-6xl">
+
               Meet{" "}
+
               <span className="bg-gradient-to-r from-violet-300 via-white to-indigo-300 bg-clip-text text-transparent">
                 BizAI Employee.
               </span>
+
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-500">
+
               Your digital business employee for customers, leads,
               sales, follow-ups, appointments, analytics, and
               AI-powered business decisions.
+
             </p>
 
           </div>
 
-          {/* Product Showcase */}
+          {/* PRODUCT SHOWCASE */}
 
           <div className="relative mt-14 overflow-hidden rounded-[2.5rem] border border-violet-400/10 bg-gradient-to-br from-violet-500/[0.08] via-white/[0.02] to-indigo-500/[0.06]">
 
@@ -484,7 +508,7 @@ export default function Home() {
 
             <div className="relative grid lg:grid-cols-[0.9fr_1.1fr]">
 
-              {/* Left */}
+              {/* LEFT */}
 
               <div className="p-8 sm:p-12 lg:p-16">
 
@@ -497,17 +521,19 @@ export default function Home() {
                 </p>
 
                 <h3 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
+
                   Your business.
                   <br />
                   Understood.
+
                 </h3>
 
                 <p className="mt-6 max-w-xl text-lg leading-8 text-gray-400">
+
                   BizAI brings the everyday tools your business needs
                   into one intelligent workspace.
-                </p>
 
-                {/* Features */}
+                </p>
 
                 <div className="mt-8 grid gap-3 sm:grid-cols-2">
 
@@ -531,8 +557,6 @@ export default function Home() {
                   )}
 
                 </div>
-
-                {/* CTA */}
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
@@ -559,7 +583,7 @@ export default function Home() {
 
               </div>
 
-              {/* Right Product UI */}
+              {/* RIGHT */}
 
               <div className="flex items-center border-t border-white/10 p-8 lg:border-l lg:border-t-0 sm:p-12">
 
@@ -591,8 +615,6 @@ export default function Home() {
 
                       </div>
 
-                      {/* Stats */}
-
                       <div className="mt-6 grid grid-cols-2 gap-3">
 
                         <DashboardStat
@@ -621,8 +643,6 @@ export default function Home() {
 
                       </div>
 
-                      {/* Recommendation */}
-
                       <div className="mt-4 rounded-2xl border border-violet-400/10 bg-gradient-to-br from-violet-500/[0.08] to-indigo-500/[0.04] p-5">
 
                         <div className="flex items-center gap-2">
@@ -638,13 +658,13 @@ export default function Home() {
                         </div>
 
                         <p className="mt-3 text-sm leading-6 text-gray-300">
+
                           Contact high-value leads first and complete
                           overdue follow-ups before the end of the day.
+
                         </p>
 
                       </div>
-
-                      {/* Health */}
 
                       <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-white/[0.025] p-4">
 
@@ -700,12 +720,16 @@ export default function Home() {
             </p>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
+
               Intelligence meets software.
+
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-gray-500">
+
               DAK combines artificial intelligence, automation,
               business data, and modern software engineering.
+
             </p>
 
           </div>
@@ -762,12 +786,16 @@ export default function Home() {
               </p>
 
               <h2 className="mx-auto mt-5 max-w-4xl text-4xl font-semibold tracking-tight sm:text-6xl">
+
                 The future of business is intelligent.
+
               </h2>
 
               <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-400">
+
                 Explore BizAI Employee and discover how DAK is
                 bringing intelligent software into everyday business.
+
               </p>
 
               <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
@@ -843,7 +871,8 @@ function DashboardStat({
     },
   };
 
-  const styles = accentStyles[accent];
+  const styles =
+    accentStyles[accent];
 
   return (
     <div
